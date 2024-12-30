@@ -236,33 +236,23 @@ const Task = () => {
                 <DialogBody>
                     <form className="mt-8 mb-2  max-w-screen-lg w-full">
                         <div className="mb-1 flex flex-col gap-6">
-                            <Typography variant="h6" color="blue-gray" className="-mb-3">
+                            <Typography variant="h6" color="gray" className="-mb-4">
                                 Title
                             </Typography>
                             <Input
                                 size="lg"
-                                placeholder=""
                                 value={formValues.title}
-                                className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                                 onChange={(e) => setFormValues({ ...formValues, title: e.target.value })}
-                                labelProps={{
-                                    className: "before:content-none after:content-none",
-                                }}
                             />
-                            <Typography variant="h6" color="blue-gray" className="-mb-3">
+                            <Typography variant="h6" color="gray" className="-mb-3">
                                 Description
                             </Typography>
                             <Input
                                 size="lg"
-                                placeholder=""
                                 value={formValues.description}
-                                className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                                 onChange={(e) => setFormValues({ ...formValues, description: e.target.value })}
-                                labelProps={{
-                                    className: "before:content-none after:content-none",
-                                }}
                             />
-                            <Typography variant="h6" color="blue-gray" className="-mb-3">
+                            <Typography variant="h6" color="gray" className="-mb-3">
                                 Priority
                             </Typography>
                             <Select value={formValues.priority} onChange={(value) => setFormValues({ ...formValues, priority: value as string })}>

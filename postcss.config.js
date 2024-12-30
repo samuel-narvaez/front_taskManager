@@ -1,4 +1,14 @@
-module.exports = {
+// postcss.config.js
+export default {
+  plugins: {
+    tailwindcss: {},
+    'postcss-import': {},
+    autoprefixer: {},
+  },
+};
+
+
+/* export default{
   plugins: {
     tailwindcss: {},
     'postcss-import': {},
@@ -6,4 +16,4 @@ module.exports = {
     'tailwindcss/aspect-ratio': {},
     autoprefixer: {},
   },
-};
+}; */

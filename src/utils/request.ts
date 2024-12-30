@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiService = axios.create({
-  baseURL: 'http://localhost:4000/',
+  baseURL: 'https://back-taskmanager-lk0r.onrender.com/',
   timeout: 120000,
 });
 
